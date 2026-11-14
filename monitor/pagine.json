@@ -1,0 +1,16 @@
+[
+  { "nome": "Compagnia di San Paolo, bandi e scadenze", "url": "https://www.compagniadisanpaolo.it/it/cosa-facciamo/contributi/", "controlla_testo": false },
+  { "nome": "Compagnia di San Paolo, prossime opportunità", "url": "https://www.compagniadisanpaolo.it/it/prossime-opportunita-di-sostegno/", "controlla_testo": true },
+  { "nome": "Fondazione CRT, elenco bandi e progetti", "url": "https://www.fondazionecrt.it/progetti-e-bandi/", "controlla_testo": false },
+  { "nome": "Fondazione CRT, Ordinarie Arte e cultura", "url": "https://www.fondazionecrt.it/bandi-progetti/arte-cultura-ordinarie/", "controlla_testo": true },
+  { "nome": "Fondazione CRT, Immagini e Prospettive", "url": "https://www.fondazionecrt.it/bandi-progetti/bando-esponente-immagini-prospettive/", "controlla_testo": true },
+  { "nome": "Fondazione CRT, NoteSipari", "url": "https://www.fondazionecrt.it/bandi-progetti/note-sipari/", "controlla_testo": true },
+  { "nome": "Fondazione CRT, Eventi for All", "url": "https://www.fondazionecrt.it/bandi-progetti/eventi-for-all/", "controlla_testo": true },
+  { "nome": "Città di Torino, bandi e avvisi", "url": "https://bandi.comune.torino.it/", "controlla_testo": false },
+  { "nome": "Circoscrizione 2, Torino", "url": "https://decentramento.comune.torino.it/circoscrizione2/", "controlla_testo": false },
+  { "nome": "Fondazione per la Cultura Torino", "url": "https://fpct.it/", "controlla_testo": false },
+  { "nome": "Regione Piemonte, bandi", "url": "https://bandi.regione.piemonte.it/", "controlla_testo": false },
+  { "nome": "Ministero della Cultura, Cinema e audiovisivo", "url": "https://cinema.cultura.gov.it/avvisi/", "controlla_testo": false },
+  { "nome": "Agenzia nazionale per i giovani", "url": "https://www.agenziagiovani.it/", "controlla_testo": false },
+  { "nome": "Corpo europeo di solidarietà, progetti di solidarietà", "url": "https://youth.europa.eu/solidarity/young-people/solidarity-projects_it", "controlla_testo": true }
+]

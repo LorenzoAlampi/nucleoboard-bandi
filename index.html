@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="claude:viewport-fit-sides" content="cover">
+<title>Bandi NucleoBoard</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap">
+<style>
+:root{
+  --bg:#f6f4ef; --card:#fffdf9; --fg:#23211c; --muted:#6b675d; --line:#e2ddd0;
+  --accent:#b4451f; --accent-soft:#f6e3da; --ok:#2f6b3f; --ok-soft:#dcecdd;
+  --warn:#8a5a00; --warn-soft:#f6e8c7; --none:#6b675d; --none-soft:#ebe8df;
+  --info:#2a5a8c; --info-soft:#dde8f4;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#1a1916; --card:#23211d; --fg:#ece8dd; --muted:#a29d90; --line:#37342d;
+  --accent:#ee8a62; --accent-soft:#3b261d; --ok:#8fd09f; --ok-soft:#1f3425;
+  --warn:#e8c26a; --warn-soft:#3a2f14; --none:#a29d90; --none-soft:#2c2a25;
+  --info:#8fb8e6; --info-soft:#1c2c3d; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#1a1916; --card:#23211d; --fg:#ece8dd; --muted:#a29d90; --line:#37342d;
+  --accent:#ee8a62; --accent-soft:#3b261d; --ok:#8fd09f; --ok-soft:#1f3425;
+  --warn:#e8c26a; --warn-soft:#3a2f14; --none:#a29d90; --none-soft:#2c2a25;
+  --info:#8fb8e6; --info-soft:#1c2c3d; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--fg);font:15px/1.55 Inter,system-ui,sans-serif;
+  padding-block:32px 56px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.wrap{max-width:860px;margin:0 auto;display:flex;flex-direction:column;gap:28px}
+h1,h2,h3{font-family:"Space Grotesk",Inter,sans-serif;text-wrap:balance;margin:0;line-height:1.2}
+h1{font-size:2rem}
+h2{font-size:1.25rem}
+h3{font-size:1.05rem}
+.sub{color:var(--muted);margin:6px 0 0;max-width:62ch}
+.label{font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-weight:600}
+.panel{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px;display:flex;flex-direction:column;gap:12px}
+.filters{display:flex;flex-direction:column;gap:12px}
+.row{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+button.chip{font:inherit;font-size:.85rem;border:1px solid var(--line);background:var(--card);color:var(--fg);
+  border-radius:999px;padding:6px 12px;cursor:pointer}
+button.chip[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:var(--bg);font-weight:600}
+input[type=search]{font:inherit;width:100%;padding:10px 12px;border:1px solid var(--line);border-radius:10px;background:var(--card);color:var(--fg)}
+.list{display:flex;flex-direction:column;gap:14px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px;display:flex;flex-direction:column;gap:10px;min-width:0}
+.card .top{display:flex;flex-wrap:wrap;gap:8px;align-items:center;justify-content:space-between}
+.ente{font-size:.8rem;color:var(--muted);font-weight:500}
+.badges{display:flex;flex-wrap:wrap;gap:6px}
+.badge{font-size:.72rem;font-weight:600;border-radius:6px;padding:3px 8px}
+.s-aperto{background:var(--ok-soft);color:var(--ok)}
+.s-atteso{background:var(--info-soft);color:var(--info)}
+.s-verifica{background:var(--warn-soft);color:var(--warn)}
+.s-chiuso{background:var(--none-soft);color:var(--none)}
+.f-ok{background:var(--ok-soft);color:var(--ok)}
+.f-warn{background:var(--warn-soft);color:var(--warn)}
+.f-none{background:var(--none-soft);color:var(--none)}
+dl{margin:0;display:grid;grid-template-columns:minmax(0,7.5rem) minmax(0,1fr);gap:4px 12px;font-size:.9rem}
+dt{color:var(--muted)}
+dd{margin:0;min-width:0}
+.todo{background:var(--accent-soft);border-radius:8px;padding:10px 12px;font-size:.9rem}
+.tags{display:flex;flex-wrap:wrap;gap:6px}
+.tag{font-size:.72rem;color:var(--muted);border:1px solid var(--line);border-radius:6px;padding:2px 7px}
+a{color:var(--accent)}
+.card.chiuso{opacity:.75}
+.idee{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,250px),1fr));gap:12px}
+.idea{border:1px solid var(--line);border-radius:10px;padding:14px;display:flex;flex-direction:column;gap:8px;background:var(--card)}
+.idea p{margin:0;font-size:.9rem}
+.nov li{margin-bottom:6px;overflow-wrap:anywhere}
+.empty{color:var(--muted);font-size:.9rem;margin:0}
+footer{color:var(--muted);font-size:.8rem}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="label">Cascina Roccafranca · NucleoBoard</div>
+    <h1>Bandi per il NucleoBoard</h1>
+    <p class="sub">Fondi per eventi, divulgazione, spazi e attrezzature, giovani e ambiente. Le domande ufficiali le presenta Cascina. <span id="agg"></span></p>
+  </header>
+
+  <section class="panel" id="novita-box" hidden>
+    <h2>Novità rilevate dal controllo automatico</h2>
+    <ul class="nov" id="novita"></ul>
+  </section>
+
+  <section class="panel">
+    <h2>Cosa proporre, in base ai bandi</h2>
+    <div class="idee" id="idee"></div>
+  </section>
+
+  <section class="filters">
+    <input type="search" id="q" placeholder="Cerca (es. cinema, musica, Regione)" aria-label="Cerca">
+    <div>
+      <div class="label">Tema</div>
+      <div class="row" id="f-tema"></div>
+    </div>
+    <div>
+      <div class="label">Stato</div>
+      <div class="row" id="f-stato"></div>
+    </div>
+    <p class="empty" id="count"></p>
+  </section>
+
+  <section class="list" id="list"></section>
+
+  <footer>Le informazioni vengono da pagine ufficiali lette a novembre 2026. Prima di candidarti controlla sempre il testo del bando. Le scadenze “attese” sono ipotesi basate sull'anno scorso.</footer>
+</div>
+
+<script>
+const TEMI = {
+  tutti: "Tutti", eventi: "Eventi e musica", cinema: "Cinema e Oltre", divulgazione: "Divulgazione",
+  spazi: "Spazi e attrezzature", giovani: "Giovani e partecipazione", ambiente: "Ambiente e mobilità"
+};
+const STATI = { tutti: "Tutti", aperto: "Aperto", atteso: "Atteso", verifica: "Da verificare", chiuso: "Chiuso" };
+const stato = { tema: "tutti", stato: "tutti", q: "" };
+let DATI = { bandi: [], idee: [] };
+
+function el(tag, props, ...figli) {
+  const e = document.createElement(tag);
+  for (const [k, v] of Object.entries(props || {})) {
+    if (k === "class") e.className = v;
+    else if (k === "text") e.textContent = v;
+    else e.setAttribute(k, v);
+  }
+  for (const f of figli) if (f) e.append(f);
+  return e;
+}
+function safeUrl(u) { return /^https?:\/\//.test(u || "") ? u : "#"; }
+
+function chips(box, mappa, chiave) {
+  box.replaceChildren();
+  for (const [k, v] of Object.entries(mappa)) {
+    const b = el("button", { class: "chip", type: "button", text: v, "aria-pressed": String(stato[chiave] === k) });
+    b.addEventListener("click", () => { stato[chiave] = k; disegna(); });
+    box.append(b);
+  }
+}
+
+function riga(dl, k, v) {
+  if (!v) return;
+  dl.append(el("dt", { text: k }), el("dd", { text: v }));
+}
+
+function scheda(b) {
+  const c = el("article", { class: "card " + (b.stato === "chiuso" ? "chiuso" : ""), id: b.id });
+  const badges = el("div", { class: "badges" },
+    el("span", { class: "badge s-" + b.stato, text: b.statoLabel || STATI[b.stato] }),
+    el("span", { class: "badge f-" + b.fit, text: b.fitLabel }));
+  c.append(el("div", { class: "top" }, el("span", { class: "ente", text: b.ente }), badges));
+  c.append(el("h3", { text: b.titolo }));
+  const dl = el("dl");
+  riga(dl, "Scadenza", b.scadenza);
+  riga(dl, "Importo", b.importo);
+  c.append(dl);
+  c.append(el("p", { text: b.nota, style: "margin:0" }));
+  if (b.todo) c.append(el("div", { class: "todo" }, el("strong", { text: "Da fare: " }), document.createTextNode(b.todo)));
+  const tags = el("div", { class: "tags" });
+  for (const t of b.temi || []) tags.append(el("span", { class: "tag", text: TEMI[t] || t }));
+  c.append(tags);
+  const a = el("a", { href: safeUrl(b.link), target: "_blank", rel: "noopener", text: b.linkLabel || "Apri" });
+  c.append(el("div", {}, a));
+  return c;
+}
+
+function disegna() {
+  chips(document.getElementById("f-tema"), TEMI, "tema");
+  chips(document.getElementById("f-stato"), STATI, "stato");
+  const q = stato.q.trim().toLowerCase();
+  const ordine = { aperto: 0, atteso: 1, verifica: 2, chiuso: 3 };
+  const lista = DATI.bandi
+    .filter(b => stato.tema === "tutti" || (b.temi || []).includes(stato.tema))
+    .filter(b => stato.stato === "tutti" || b.stato === stato.stato)
+    .filter(b => !q || [b.titolo, b.ente, b.nota, b.breve, b.scadenza].join(" ").toLowerCase().includes(q))
+    .sort((a, b) => ordine[a.stato] - ordine[b.stato]);
+  const box = document.getElementById("list");
+  box.replaceChildren(...lista.map(scheda));
+  document.getElementById("count").textContent = lista.length + (lista.length === 1 ? " bando" : " bandi");
+}
+
+function disegnaIdee() {
+  const box = document.getElementById("idee");
+  box.replaceChildren();
+  const nomi = Object.fromEntries(DATI.bandi.map(b => [b.id, b.breve || b.titolo]));
+  for (const i of DATI.idee || []) {
+    const lk = el("div", { class: "tags" });
+    for (const id of i.bandi || []) {
+      if (!nomi[id]) continue;
+      const a = el("a", { href: "#" + id, class: "tag", text: nomi[id] });
+      a.addEventListener("click", () => { stato.tema = "tutti"; stato.stato = "tutti"; stato.q = ""; document.getElementById("q").value = ""; disegna(); });
+      lk.append(a);
+    }
+    box.append(el("div", { class: "idea" }, el("h3", { text: i.titolo }), el("p", { text: i.testo }), lk));
+  }
+}
+
+function disegnaNovita(n) {
+  if (!Array.isArray(n) || !n.length) return;
+  const ul = document.getElementById("novita");
+  for (const v of n.slice(0, 10)) {
+    ul.append(el("li", {}, document.createTextNode(v.data + " · " + v.pagina + ": "),
+      el("a", { href: safeUrl(v.url), target: "_blank", rel: "noopener", text: v.titolo })));
+  }
+  document.getElementById("novita-box").hidden = false;
+}
+
+async function carica(file, def) {
+  try { const r = await fetch(file, { cache: "no-store" }); if (!r.ok) throw 0; return await r.json(); }
+  catch (e) { return def; }
+}
+
+document.getElementById("q").addEventListener("input", e => { stato.q = e.target.value; disegna(); });
+
+(async () => {
+  DATI = await carica("bandi.json", { bandi: [], idee: [] });
+  if (DATI.aggiornato) document.getElementById("agg").textContent = "Ultimo aggiornamento dei dati: " + DATI.aggiornato + ".";
+  disegnaIdee();
+  disegna();
+  disegnaNovita(await carica("novita.json", []));
+})();
+</script>
+</body>
+</html>
