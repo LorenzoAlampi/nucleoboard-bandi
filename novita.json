@@ -1,1 +1,44 @@
-[]
+[
+  {
+    "data": "2026-11-15",
+    "pagina": "Fondazione CRT, Immagini e Prospettive",
+    "titolo": "Agenda della Disabilità",
+    "url": "https://www.fondazionecrt.it/bandi-progetti/agenda-disabilita/",
+    "tipo": "link"
+  },
+  {
+    "data": "2026-11-15",
+    "pagina": "Regione Piemonte, bandi",
+    "titolo": "Per saperne di più su Avviso di selezione pubblica per un incarico dirigenziale",
+    "url": "https://bandi.regione.piemonte.it/concorsi-incarichi-stage/avviso-selezione-pubblica-un-incarico-dirigenziale",
+    "tipo": "link"
+  },
+  {
+    "data": "2026-11-15",
+    "pagina": "Fondazione CRT, Ordinarie Arte e cultura",
+    "titolo": "Il testo della pagina è cambiato",
+    "url": "https://www.fondazionecrt.it/bandi-progetti/arte-cultura-ordinarie/",
+    "tipo": "testo"
+  },
+  {
+    "data": "2026-11-15",
+    "pagina": "Fondazione CRT, Immagini e Prospettive",
+    "titolo": "Il testo della pagina è cambiato",
+    "url": "https://www.fondazionecrt.it/bandi-progetti/bando-esponente-immagini-prospettive/",
+    "tipo": "testo"
+  },
+  {
+    "data": "2026-11-15",
+    "pagina": "Fondazione CRT, NoteSipari",
+    "titolo": "Il testo della pagina è cambiato",
+    "url": "https://www.fondazionecrt.it/bandi-progetti/note-sipari/",
+    "tipo": "testo"
+  },
+  {
+    "data": "2026-11-15",
+    "pagina": "Fondazione CRT, Eventi for All",
+    "titolo": "Il testo della pagina è cambiato",
+    "url": "https://www.fondazionecrt.it/bandi-progetti/eventi-for-all/",
+    "tipo": "testo"
+  }
+]
