@@ -107,7 +107,7 @@
       "https://www.youtube.com/user/compagniadisanpaolo"
     ],
     "hash": "49458eeba2a2f3ee8dd12688e34c8354860d2e8323cf5b23879e774f7fe320aa",
-    "controllato": "2026-11-24"
+    "controllato": "2026-11-25"
   },
   "https://www.compagniadisanpaolo.it/it/prossime-opportunita-di-sostegno/": {
     "visti": [
@@ -211,7 +211,7 @@
       "https://www.youtube.com/user/compagniadisanpaolo"
     ],
     "hash": "5b86fd5db7b5babfbc53056df53c7ed7934262dd0b5f0ae9b1572f76460f95c1",
-    "controllato": "2026-11-24"
+    "controllato": "2026-11-25"
   },
   "https://www.fondazionecrt.it/progetti-e-bandi/": {
     "visti": [
@@ -257,8 +257,8 @@
       "https://www.fondazionecrt.it/europea-guida-europrogettazione-podcast/",
       "https://www.fondazionecrt.it/storie-talenti/talento-olimpiade-sara-berutto/"
     ],
-    "hash": "8abd1feb868f49e77892d2ccac2539b8cf1c38c3c6e5fad4b21a6ecebcd5925e",
-    "controllato": "2026-11-24"
+    "hash": "e8060cc4739eb78e28097c3281609015e916d1c7bdf966bf9dff951738e6c622",
+    "controllato": "2026-11-25"
   },
   "https://www.fondazionecrt.it/bandi-progetti/arte-cultura-ordinarie/": {
     "visti": [
@@ -309,8 +309,8 @@
       "https://www.fondazionecrt.it/europea-guida-europrogettazione-podcast/",
       "https://www.fondazionecrt.it/impact-deal-2025/"
     ],
-    "hash": "d5f7a47e79da5e6c207eadbfce126a3ff9175f8cd86724e01ed4ea89e68d4557",
-    "controllato": "2026-11-24"
+    "hash": "70dcc306c970f4bd87d833bfca15e41f42c97c5656cc8df6364df114def9a86b",
+    "controllato": "2026-11-25"
   },
   "https://www.fondazionecrt.it/bandi-progetti/bando-esponente-immagini-prospettive/": {
     "visti": [
@@ -351,8 +351,8 @@
       "https://www.fondazionecrt.it/storie-talenti/talento-olimpiade-sara-berutto/",
       "https://www.fondazionecrt.it/storie-talenti/alessandro-balossino-spazio/"
     ],
-    "hash": "7fd52a525595209fd77aa642f078caa16307c7a222e96bb5c8db2441f63189fe",
-    "controllato": "2026-11-24"
+    "hash": "e2270ec549c1b021dd762869fc210517f5af1406823683bb58f0cf45b2ccaf28",
+    "controllato": "2026-11-25"
   },
   "https://www.fondazionecrt.it/bandi-progetti/note-sipari/": {
     "visti": [
@@ -394,8 +394,8 @@
       "https://www.fondazionecrt.it/storie-talenti/alessandro-balossino-spazio/",
       "https://www.fondazionecrt.it/bandi-progetti/agenda-disabilita/"
     ],
-    "hash": "ceefc125268aa63edfd9502499197dc7cfc3344c9c8cc558a2f324dcaa9998d4",
-    "controllato": "2026-11-24"
+    "hash": "9d26d1a8f1da584c8d9e72e7a2744c059c59b2bb1a884ca472b68f5c1cd232a0",
+    "controllato": "2026-11-25"
   },
   "https://www.fondazionecrt.it/bandi-progetti/eventi-for-all/": {
     "visti": [
@@ -439,8 +439,8 @@
       "https://www.fondazionecrt.it/storie-talenti/talento-olimpiade-sara-berutto/",
       "https://www.fondazionecrt.it/storie-talenti/dallafghanistan-allitalia-la-storia-di-emancipazione-di-hasina/"
     ],
-    "hash": "5aece0f23d4e81617bea06f21b5851b1c29f23ca440ac46f6d0e750f62b0947e",
-    "controllato": "2026-11-24"
+    "hash": "556e1fce7cb758768818967334d627b42d14e60de102e8a68120f26d9cfd1953",
+    "controllato": "2026-11-25"
   },
   "https://bandi.comune.torino.it/": {
     "visti": [
@@ -523,10 +523,19 @@
       "https://bandi.comune.torino.it/bando/fornitura-torce-ricaricabili-favore-della-ditta-supteq-srl-p-iva-04226221200",
       "https://bandi.comune.torino.it/bando/affidamento-diretto-servizio-manutenzione-apparecchiature-controllo-posta-sospetta-favore",
       "https://bandi.comune.torino.it/bando/dipartimento-commercio-affidamento-diretto-realizzazione-banner",
-      "https://bandi.comune.torino.it/?page=240"
+      "https://bandi.comune.torino.it/?page=240",
+      "https://bandi.comune.torino.it/bando/fornitura-polo-giacche-invernali-volontari-progetto-torinoyou",
+      "https://bandi.comune.torino.it/bando/affidamento-diretto-ai-sensi-dellart-50-comma-1-lettera-b-dlgs-362023-smi-servizio-asporto",
+      "https://bandi.comune.torino.it/bando/bando-pubblico-g01186-lindividuazione-soggetto-attuatore-lorganizzazione-mercato-periodico",
+      "https://gare.comune.torino.it/PortaleAppalti/it/procedure/codice/G01186",
+      "https://bandi.comune.torino.it/bando/consultazione-banca-dati-pubblico-registro-automobilistico",
+      "https://bandi.comune.torino.it/bando/csi-piemonte-evoluzione-sistema-informativo-servizi-socio-assistenziali-ed-erp",
+      "https://bandi.comune.torino.it/bando/procedura-aperta-422026",
+      "https://bandi.comune.torino.it/bando/servizio-catering-festa-ventennale-progetto-torinoyou",
+      "https://bandi.comune.torino.it/?page=241"
     ],
-    "hash": "955e51bd54888cdd7d2ef10029cf0d4cf372a013d22d6e86c4ac6bc4a35a11f0",
-    "controllato": "2026-11-24"
+    "hash": "f8ac722154e98d1422498e87e804cc1e42c761fff06b670e7e4134b5e9e4ab87",
+    "controllato": "2026-11-25"
   },
   "https://decentramento.comune.torino.it/circoscrizione2/": {
     "visti": [
@@ -599,10 +608,13 @@
       "https://decentramento.comune.torino.it/circoscrizione2/amministrazione/convocazioni-commissione-circoscrizionale/convocazione-ii-commissione-25112026",
       "https://decentramento.comune.torino.it/circoscrizione2/novita/notizia/incontro-per-prevenzione-contrasto-delle-truffe-agli-anziani-0",
       "https://decentramento.comune.torino.it/circoscrizione2/amministrazione/convocazioni-commissione-circoscrizionale/convocazione-iii-commissione-26112026",
-      "https://decentramento.comune.torino.it/circoscrizione2/amministrazione/convocazioni-commissione-circoscrizionale/convocazione-commissione-30112026"
+      "https://decentramento.comune.torino.it/circoscrizione2/amministrazione/convocazioni-commissione-circoscrizionale/convocazione-commissione-30112026",
+      "https://decentramento.comune.torino.it/circoscrizione2/novita/notizia/25-novembre-2026",
+      "https://decentramento.comune.torino.it/circoscrizione2/vivere-circoscrizione/eventi/incontri-per-prevenzione-contrasto-delle-truffe-agli-anziani",
+      "https://decentramento.comune.torino.it/circoscrizione2/vivere-circoscrizione/eventi/rassegna-teatrale-punti-vista-risonanze-2"
     ],
-    "hash": "6351d79cd9bd4b094f952bffdfb26d0a40e8b26de86094870a3c7094bd3aac81",
-    "controllato": "2026-11-24"
+    "hash": "56bbc461d4771a5c6225c7197e810df3f0626c2070170018de38dad0d589fbb9",
+    "controllato": "2026-11-25"
   },
   "https://fpct.it/": {
     "visti": [
@@ -661,7 +673,7 @@
       "https://fpct.it/nasce-la-newsletter-di-fondazione-per-la-cultura-torino-iscriviti-per-vivere-e-condividere-cultura/"
     ],
     "hash": "ee003e62137df5942ed39e2e24308b1c7e0527156451a2b093c0599f20ce380b",
-    "controllato": "2026-11-24"
+    "controllato": "2026-11-25"
   },
   "https://bandi.regione.piemonte.it/": {
     "visti": [
@@ -762,10 +774,14 @@
       "https://bandi.regione.piemonte.it/contributi-finanziamenti/formazione-un-elenco-enti-autorizzati-alle-pratiche-adozione-internazionale-partecipazione-ai-corsi",
       "https://bandi.regione.piemonte.it/concorsi-incarichi-stage/selezione-un-esperto-quality-control-investimenti-pnrr-pnc",
       "https://bandi.regione.piemonte.it/contributi-finanziamenti/bando-educazione-alla-cittadinanza-globale-sostenibilita-solidarieta-internazionale-anno-2026",
-      "https://bandi.regione.piemonte.it/contributi-finanziamenti/energie-rinnovabili-nelle-imprese-2026"
+      "https://bandi.regione.piemonte.it/contributi-finanziamenti/energie-rinnovabili-nelle-imprese-2026",
+      "https://bandi.regione.piemonte.it/gare-appalto/avviso-consultazione-preliminare-mercato-verifica-infungibilita-inerente-al-servizio-gestione",
+      "https://bandi.regione.piemonte.it/contributi-finanziamenti/misura-rilancio-settore-vitivinicolo-attraverso-sostegno-ad-accordi-filiera",
+      "https://bandi.regione.piemonte.it/gare-appalto/lavori-interventi-sistemazione-idraulica-fiume-sesia-frazione-quare-comune-campertogno-vc-avviso",
+      "https://bandi.regione.piemonte.it/gare-appalto/lavori-ripristino-difesa-spondale-movimentazione-materiale-lapideo-sul-torrente-elvo-nel-comune"
     ],
-    "hash": "f7842f35ef3ff53854386e9d4dbfd089f2c3f71e98366434e8455a1211b89f7a",
-    "controllato": "2026-11-24"
+    "hash": "eec64021463d6bf413a53b1aa9114b0dbde2c98498ca148d8280bc4f5bd0edc2",
+    "controllato": "2026-11-25"
   },
   "https://cinema.cultura.gov.it/avvisi/": {
     "visti": [
@@ -989,7 +1005,7 @@
       "https://cinema.cultura.gov.it/avvisi/apertura-seconda-sessione-tax-credit-distribuzione-nazionale-e-internazionale-anno-2025/"
     ],
     "hash": "d80e539e2f915554641a4c7da7ab4edb75b932bb3944260fb0fd4d98045dd41b",
-    "controllato": "2026-11-24"
+    "controllato": "2026-11-25"
   },
   "https://www.agenziagiovani.it/": {
     "visti": [
@@ -1076,7 +1092,7 @@
       "https://agenziagioventu.gov.it/?p=20082"
     ],
     "hash": "b1e0ea592cf62d1d32f6cae93ee9487335b572c528b2a18dd1f13311350c2d37",
-    "controllato": "2026-11-24"
+    "controllato": "2026-11-25"
   },
   "https://youth.europa.eu/solidarity/young-people/solidarity-projects_it": {
     "visti": [
@@ -1160,6 +1176,6 @@
       "https://youth.europa.eu/volunteering/organisations_it"
     ],
     "hash": "991e409f6453a201c4cdbabfc8ab3178368d48a9efbf60ba0cc2b412f4ff584e",
-    "controllato": "2026-11-24"
+    "controllato": "2026-11-25"
   }
 }
